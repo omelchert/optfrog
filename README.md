@@ -11,6 +11,7 @@ signal with marginals that represent the original intensities per unit time and
 frequency similarly well. A tunable paramter might be adjusted to emphasize
 time or frequency resolution.  
 
+![alt text](https://github.com/omelchert/optfrog/blob/master/examples/FIGS/fig_optFrog_ESM_alpha0.0000.png)
 
 ### Prerequisites
 
@@ -60,6 +61,6 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 ## Acknowledgments
 
 This work received funding from the VolkswagenStiftung within the
-‘Niedersächsisches Vorab’ program in the framework of the project ‘Hybrid
+‘Niedersächsisches Vorab’ program in the framework of the project ‘Hybrid
 Numerical Optics’ (HYMNOS; Grant ZN 3061). 
 
