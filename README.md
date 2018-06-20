@@ -11,7 +11,6 @@ signal with marginals that represent the original intensities per unit time and
 frequency similarly well. A tunable paramter might be adjusted to emphasize
 time or frequency resolution.  
 
-![alt text](https://github.com/omelchert/optfrog/blob/master/examples/FIGS/fig_optFrog_ESM_alpha0.0000.png)
 
 ### Prerequisites
 
@@ -35,7 +34,7 @@ from the commandline.
 In case you downloaded the source distribution optfrog-1.0.0.tar.gz from the folder dist onto a Unix system with user rights only, run
 
 ```
-tar -xvf 
+tar -xvf optfrog-1.0.0.tar.gz
 cd optfrog-1.0.0
 python setup.py install --user
 ```
@@ -52,7 +51,10 @@ python example_optFrog.py
 ```
 
 will compute a time-frequency optimized spectrogram for an input signal characterizing 
-a short intense optical pulse after propagation in a nonlinear waveguide.
+a short intense optical pulse after propagation in a nonlinear waveguide. The above example script will generate the figure below.
+
+![alt text](https://github.com/omelchert/optfrog/blob/master/examples/FIGS/fig_optFrog_ESM_alpha0.0000.png)
+
 
 ## License
 
