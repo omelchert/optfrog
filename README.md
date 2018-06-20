@@ -35,7 +35,7 @@ In case you downloaded the source distribution `optfrog-1.0.0.tar.gz` from the f
 
 ```
 tar -xvf optfrog-1.0.0.tar.gz
-cd optfrog-1.0.0
+cd optfrog-1.0.0/
 python setup.py install --user
 ```
 
@@ -57,7 +57,7 @@ a short intense optical pulse after propagation in a nonlinear waveguide. The ab
 
 ## Links
 
-Further use-cases demonstrating parts of the functionality of `optfrog` as a numerical tool for signal analysis in ultrashort pulse propagation can be found [here](https://doi.org/10.1117/12.2313255https://doi.org/10.1117/12.2313255).
+Further use-cases demonstrating parts of the functionality of `optfrog` as a numerical tool for signal analysis in ultrashort pulse propagation can be found [here](https://doi.org/10.1117/12.2313255).
 
 ## License
 
