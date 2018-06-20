@@ -14,12 +14,16 @@ time or frequency resolution.
 
 ### Prerequisites
 
-Optfrog requires the functionality of 
+The tools provided by the `optfrog` package require the functionality of 
 
-* Numpy
-* Scipy
-* Matplotlib
+* numpy (>=1.8.0rc1)
+* scipy (>=0.13.0b1)
 
+Further, the sample scripts provided in the `examples` folder require the funcality of
+
+* matplotlib (>=1.2.1)
+
+for generating figures as the one shown below.
 
 ### Installing
 
