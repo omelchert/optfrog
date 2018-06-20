@@ -31,7 +31,7 @@ python setup.py install
 
 from the commandline.
 
-In case you downloaded the source distribution optfrog-1.0.0.tar.gz from the folder dist onto a Unix system with user rights only, run
+In case you downloaded the source distribution `optfrog-1.0.0.tar.gz` from the folder dist onto a Unix system with user rights only, run
 
 ```
 tar -xvf optfrog-1.0.0.tar.gz
@@ -39,26 +39,29 @@ cd optfrog-1.0.0
 python setup.py install --user
 ```
 
-from the commandline. This, however will only install the optfrog tools without the examples folder.
+from the commandline. This, however will only install the optfrog tools without the examples folder. So make sure to also fetch a local copy of the examples provided here.
 
 ## Example Programs
 
 Optfrog also comes with several sample programs in the examples directory. For example, 
-changing to the examples folder
+changing to the `examples` folder and running
 
 ```
 python example_optFrog.py
 ```
 
 will compute a time-frequency optimized spectrogram for an input signal characterizing 
-a short intense optical pulse after propagation in a nonlinear waveguide. The above example script will generate the figure below.
+a short intense optical pulse after propagation in a nonlinear waveguide. The above example script will generate the below figure in subfolder `FIGS`.
 
 ![alt text](https://github.com/omelchert/optfrog/blob/master/examples/FIGS/fig_optFrog_ESM_alpha0.0000.png)
 
+## Links
+
+Further use-cases demonstrating parts of the functionality of `optfrog` as a numerical tool for signal analysis in ultrashort pulse propagation can be found [here](https://doi.org/10.1117/12.2313255https://doi.org/10.1117/12.2313255).
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
 
 ## Acknowledgments
 
