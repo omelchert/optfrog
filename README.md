@@ -31,7 +31,7 @@ python setup.py install
 
 from the commandline.
 
-In case you downloaded the source distribution `optfrog-1.0.0.tar.gz` from the folder dist onto a Unix system with user rights only, run
+In case you downloaded the source distribution `optfrog-1.0.0.tar.gz` from the folder `dist` onto a Unix system with user rights only, run
 
 ```
 tar -xvf optfrog-1.0.0.tar.gz
@@ -54,6 +54,12 @@ will compute a time-frequency optimized spectrogram for an input signal characte
 a short intense optical pulse after propagation in a nonlinear waveguide. The above example script will generate the below figure in subfolder `FIGS`.
 
 ![alt text](https://github.com/omelchert/optfrog/blob/master/examples/FIGS/fig_optFrog_ESM_alpha0.0000.png)
+
+### Brief explanation of the above figure
+
+The center part of the figure shows an `optFrog` spectrogram for an exemplary input signal. The intesity of the
+spectrogram is normalized to a maximum value of unity. The subfigure on top allows to compare the intensity per unit time of the normalized analytic signal for the input data (gray line) to the time marginal obtained from the spectrogram (black line). The subfigure on the right shows the intensity per unit frequency of the analytic signal (gray line) as well as the frequency marginal computed from the spectrogram (black line).
+
 
 ## Links
 
