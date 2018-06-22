@@ -33,7 +33,7 @@ Get a local copy of the repository and install optfrog by running
 python setup.py install
 ```
 
-from the commandline.
+from the commandline. The installation requires pythons setuptools.
 
 In case you downloaded the source distribution `optfrog-1.0.0.tar.gz` from the folder `dist` onto a Unix system with user rights only, run
 
@@ -47,14 +47,14 @@ from the commandline. This, however will only install the optfrog tools without 
 
 ## Example Programs
 
-Optfrog also comes with several sample programs in the examples directory. For example, 
+`optfrog` also comes with several sample programs in the examples directory. For example, 
 changing to the `examples` folder and running
 
 ```
 python example_optFrog.py
 ```
 
-will compute a time-frequency optimized spectrogram for an input signal characterizing 
+will compute a time-frequency resolution optimized spectrogram for an input signal characterizing 
 a short intense optical pulse after propagation in a nonlinear waveguide. The above example script will generate the below figure in subfolder `FIGS`.
 
 ![alt text](https://github.com/omelchert/optfrog/blob/master/examples/FIGS/fig_optFrog_ESM_alpha0.0000.png)
@@ -67,7 +67,7 @@ spectrogram is normalized to a maximum value of unity. The subfigure on top allo
 
 ## Links
 
-Further use-cases demonstrating parts of the functionality of `optfrog` as a numerical tool for signal analysis in ultrashort pulse propagation can be found [here](https://doi.org/10.1117/12.2313255).
+Further use-cases demonstrating parts of the functionality of `optfrog` as a tool for signal analysis in ultrashort pulse propagation can be found [here](https://doi.org/10.1117/12.2313255).
 
 ## License
 
