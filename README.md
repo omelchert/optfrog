@@ -67,7 +67,9 @@ spectrogram is normalized to a maximum value of unity. The subfigure on top allo
 
 ## Links
 
-Further use-cases demonstrating parts of the functionality of `optfrog` as a tool for signal analysis in ultrashort pulse propagation can be found [here](https://doi.org/10.1117/12.2313255).
+Further use-cases demonstrating parts of the functionality of `optfrog` as a tool for signal analysis in ultrashort pulse propagation can be found under
+
+> O. Melchert, U. Morgner, B. Roth, I. Babushkin, A. Demircan, "Accurate propagation of ultrashort pulses in nonlinear waveguides using propagation models for the analytic signal," Proc. SPIE 10694, Computational Optics II, 106940M (2018); [doi: 10.1117/12.2313255](https://doi.org/10.1117/12.2313255)
 
 ## License
 
