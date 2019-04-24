@@ -77,7 +77,7 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Acknowledgments
 
-This work received funding from the VolkswagenStiftung within the
-‘Niedersächsisches Vorab’ program in the framework of the project ‘Hybrid
-Numerical Optics’ (HYMNOS; Grant ZN 3061). 
-
+This work received funding from the Deutsche Forschungsgemeinschaft  (DFG) under
+Germany’s Excellence Strategy within the Cluster of Excellence PhoenixD
+(Photonics, Optics, and Engineering – Innovation Across Disciplines) (EXC 2122,
+projectID 390833453).
