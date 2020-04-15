@@ -1,6 +1,6 @@
 # optfrog 
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/lice    nses/MIT)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
 The Python package optfrog comprises tools for the calculation of spectrograms
 with optimized time and frequency resolution. Gabor's uncertainty
