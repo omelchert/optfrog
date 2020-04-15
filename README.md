@@ -1,6 +1,6 @@
 # optfrog 
 
-> Analytic signal spectrograms with optimized time-frequency resolution
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/lice    nses/MIT)
 
 The Python package optfrog comprises tools for the calculation of spectrograms
 with optimized time and frequency resolution. Gabor's uncertainty
@@ -67,9 +67,18 @@ spectrogram is normalized to a maximum value of unity. The subfigure on top allo
 
 ## Links
 
+The optfrog software package is derived from our research software and is described in 
+
+> O. Melchert, U. Morgner, B. Roth, and A. Demircan, "OptFROG — Analytic signal spectrograms with optimized time–frequency resolution", [SoftwareX 10, 100275 (2019)](https://doi.org/10.1016/j.softx.2019.100275)
+
 Further use-cases demonstrating parts of the functionality of `optfrog` as a tool for signal analysis in ultrashort pulse propagation can be found under
 
-> O. Melchert, U. Morgner, B. Roth, I. Babushkin, A. Demircan, "Accurate propagation of ultrashort pulses in nonlinear waveguides using propagation models for the analytic signal," Proc. SPIE 10694, Computational Optics II, 106940M (2018); [doi: 10.1117/12.2313255](https://doi.org/10.1117/12.2313255)
+> O. Melchert, U. Morgner, B. Roth, I. Babushkin, and A. Demircan, "Accurate propagation of ultrashort pulses in nonlinear waveguides using propagation models for the analytic signal," [Proc. SPIE 10694, Computational Optics II, 106940M (2018)](https://doi.org/10.1117/12.2313255)
+
+and
+
+> O. Melchert, S. Willms, S. Bose, A. Yulin, B. Roth, F. Mitschke, U. Morgner, I. Babushkin, and A. Demircan, "Soliton Molecules with Two Frequencies", [Phys. Rev. Lett. 123, 243905 (2019)](https://doi.org/10.1103/PhysRevLett.123.243905)
+
 
 ## License
 
