@@ -64,6 +64,9 @@ a short intense optical pulse after propagation in a nonlinear waveguide. The ab
 The center part of the figure shows an `optFrog` spectrogram for an exemplary input signal. The intesity of the
 spectrogram is normalized to a maximum value of unity. The subfigure on top allows to compare the intensity per unit time of the normalized analytic signal for the input data (gray line) to the time marginal obtained from the spectrogram (black line). The subfigure on the right shows the intensity per unit frequency of the analytic signal (gray line) as well as the frequency marginal computed from the spectrogram (black line).
 
+## Availability of the software
+
+We further prepared an [optFROG compute capsule](https://codeocean.com/capsule/7823161/tree) on [Code Ocean](https://codeocean.com), allowing to directly run and modify an exemplary simulation without the need to locally install the software. 
 
 ## Links
 
@@ -78,7 +81,6 @@ Further use-cases demonstrating parts of the functionality of `optfrog` as a too
 and
 
 > O. Melchert, S. Willms, S. Bose, A. Yulin, B. Roth, F. Mitschke, U. Morgner, I. Babushkin, and A. Demircan, "Soliton Molecules with Two Frequencies", [Phys. Rev. Lett. 123, 243905 (2019)](https://doi.org/10.1103/PhysRevLett.123.243905)
-
 
 ## License
 
