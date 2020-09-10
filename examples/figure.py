@@ -126,8 +126,8 @@ def spectrogramFigure(sigDat, specDat, oName=None):
     # COMPARISON OF INTENSITY PER UNIT FREQUENCY (ORIGINAL DATA) AND FREQUENCY MARGINAL ####### 
     w = nfft.fftfreq(Et.size,d=t[1]-t[0])*2*np.pi
     Ew = _fft(t,np.real(Et))
-    Ew[1:Ew.size/2]*=2
-    Ew[Ew.size/2+1:]=0
+    Ew[1:Ew.size//2]*=2
+    Ew[Ew.size//2+1:]=0
     normEw = 1./np.trapz(np.abs(Ew)**2,x=w)
     l1 = ax3.semilogx(np.abs(Ew)**2*normEw,w,color='gray',label=r"$|\hat{\mathcal{E}}(\omega)|^2$")
 
