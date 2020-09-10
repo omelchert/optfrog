@@ -85,7 +85,7 @@ def spectrogramFigure(sigDat, specDat, oName=None):
         x0, y0, w, h = refPos.x0, refPos.y0, refPos.width, refPos.height
         cax = fig.add_axes([x0+0.02*w, y0+0.64*h, 0.02*w, 0.25*h])
         cbar = fig.colorbar(im, cax=cax, ticks=[1e-8,1e-7,1e-6,1e-5,1e-4,1e-3,1e-2,1e-1],orientation='vertical')
-        cbar.outline.set_color('white')
+        cbar.outline.set_edgecolor('white')
         cbar.ax.tick_params(color='white', labelcolor='white',right=True, direction='in', labelright=True, labelleft=False, left=False,length=2.)
         cbar.set_ticks((1e-7,1e-5,1e-3,1e-1))
 
