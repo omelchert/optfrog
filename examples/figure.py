@@ -120,7 +120,7 @@ def spectrogramFigure(sigDat, specDat, oName=None):
     ax1.xaxis.set_ticks_position('bottom')
     ax1.yaxis.set_ticks_position('left')
     ax1.tick_params(axis='y',length=2., direction='in')
-    ax1.tick_params(axis='x',length=2., direction='in', labelbottom='off')
+    ax1.tick_params(axis='x',length=2., direction='in', labelbottom=False)
 
     # RIGHT SUBFIGURE: ########################################################################
     # COMPARISON OF INTENSITY PER UNIT FREQUENCY (ORIGINAL DATA) AND FREQUENCY MARGINAL ####### 
@@ -141,7 +141,7 @@ def spectrogramFigure(sigDat, specDat, oName=None):
     ax3.set_xticks((1e-4,1e-2,1e0))
     ax3.xaxis.set_ticks_position('bottom')
     ax3.yaxis.set_ticks_position('left')
-    ax3.tick_params(axis='y',length=2., direction='in', labelleft='off')
+    ax3.tick_params(axis='y',length=2., direction='in', labelleft=False)
     ax3.tick_params(axis='x',length=2., direction='in')
 
     # CENTER FIGURE: SPECTROGRAM DATA ##########################################################
