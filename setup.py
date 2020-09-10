@@ -15,6 +15,10 @@ setup(
         "Topic :: Scientific/Engineering :: Physics",
         "License :: OSI Approved :: MIT License",
     ],
+    install_requires=[
+        "numpy>=1.8.0",
+        "scipy>=0.13.0",
+    ],
 )
 
 
