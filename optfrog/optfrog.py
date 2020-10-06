@@ -26,8 +26,8 @@ def _analyticSignal(t, Et):
     r"""Construction of analytic signal for input field."""
     w = nfft.fftfreq(t.size,d=t[1]-t[0])*2*np.pi
     Zw = _fft(t,np.real(Et))
-    Zw[1:Zw.size/2]*=2
-    Zw[Zw.size/2+1:]=0
+    Zw[1:Zw.size//2]*=2
+    Zw[Zw.size//2+1:]=0
     Zt = _ifft(w,Zw)
     return (t,Zt),(w,Zw)
 
@@ -41,7 +41,7 @@ def _zeroPad(q):
     return np.pad(q,(0,2**(q.size-1).bit_length()-q.size),mode='constant')
 
 
-def vanillaFrog(t, Et, hFunc, tLim = (-np.inf, np.inf, 1), wLim = (0., np.inf, 1)):
+def vanillaFrog(t, Et, hFunc, tLim = None, wLim = None ):
     r"""Spectrogram for time-domain analytic signal.
 
     Compute an analytic signal spectrogram for time-domain analytic signal. The
@@ -120,6 +120,10 @@ def vanillaFrog(t, Et, hFunc, tLim = (-np.inf, np.inf, 1), wLim = (0., np.inf, 1
        Sol. 206 (1998) 119.
 
     """
+    if tLim is None:
+        tLim = (-np.inf, np.inf, 1)
+    if wLim is None:
+        wLim = (0., np.inf, 1)
     # INITIALIZE RESULTS ################################################################
     res = Results()
     # ZERO PAD TO FACILITATE EFFICIENT USE OF FFT #######################################
@@ -262,7 +266,7 @@ def totalEnergy(res):
     return np.trapz(timeMarginal(res),x=res.tau)
 
 
-def optFrog(t,Et, hFunc, alpha=0., tLim=(-np.inf,np.inf,1), wLim=(0.,np.inf,1), disp=True):
+def optFrog(t,Et, hFunc, alpha=0., tLim=None, wLim=None, disp=True):
     r"""Time-frequency relolution optimized spectrogram for time-domain
     analytic signal.
 
@@ -343,6 +347,10 @@ def optFrog(t,Et, hFunc, alpha=0., tLim=(-np.inf,np.inf,1), wLim=(0.,np.inf,1), 
        Architechtures, and Implementations XIII, doi: 10.1117/12.51389.
 
     """
+    if tLim is None:
+        tLim = (-np.inf, np.inf, 1)
+    if wLim is None:
+        wLim = (0., np.inf, 1)
     # SET REASONABLE BOUNDS FOR WIDTH PARAMETER OF WINDOW FUNCION #######################
     s0Min = 10.*(t[1]-t[0])
     s0Max = 0.25*(min([t.max(),tLim[1]])-max([t.min(),tLim[0]]))

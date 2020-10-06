@@ -85,7 +85,7 @@ def spectrogramFigure(sigDat, specDat, oName=None):
         x0, y0, w, h = refPos.x0, refPos.y0, refPos.width, refPos.height
         cax = fig.add_axes([x0+0.02*w, y0+0.64*h, 0.02*w, 0.25*h])
         cbar = fig.colorbar(im, cax=cax, ticks=[1e-8,1e-7,1e-6,1e-5,1e-4,1e-3,1e-2,1e-1],orientation='vertical')
-        cbar.outline.set_color('white')
+        cbar.outline.set_edgecolor('white')
         cbar.ax.tick_params(color='white', labelcolor='white',right=True, direction='in', labelright=True, labelleft=False, left=False,length=2.)
         cbar.set_ticks((1e-7,1e-5,1e-3,1e-1))
 
@@ -120,14 +120,14 @@ def spectrogramFigure(sigDat, specDat, oName=None):
     ax1.xaxis.set_ticks_position('bottom')
     ax1.yaxis.set_ticks_position('left')
     ax1.tick_params(axis='y',length=2., direction='in')
-    ax1.tick_params(axis='x',length=2., direction='in', labelbottom='off')
+    ax1.tick_params(axis='x',length=2., direction='in', labelbottom=False)
 
     # RIGHT SUBFIGURE: ########################################################################
     # COMPARISON OF INTENSITY PER UNIT FREQUENCY (ORIGINAL DATA) AND FREQUENCY MARGINAL ####### 
     w = nfft.fftfreq(Et.size,d=t[1]-t[0])*2*np.pi
     Ew = _fft(t,np.real(Et))
-    Ew[1:Ew.size/2]*=2
-    Ew[Ew.size/2+1:]=0
+    Ew[1:Ew.size//2]*=2
+    Ew[Ew.size//2+1:]=0
     normEw = 1./np.trapz(np.abs(Ew)**2,x=w)
     l1 = ax3.semilogx(np.abs(Ew)**2*normEw,w,color='gray',label=r"$|\hat{\mathcal{E}}(\omega)|^2$")
 
@@ -141,7 +141,7 @@ def spectrogramFigure(sigDat, specDat, oName=None):
     ax3.set_xticks((1e-4,1e-2,1e0))
     ax3.xaxis.set_ticks_position('bottom')
     ax3.yaxis.set_ticks_position('left')
-    ax3.tick_params(axis='y',length=2., direction='in', labelleft='off')
+    ax3.tick_params(axis='y',length=2., direction='in', labelleft=False)
     ax3.tick_params(axis='x',length=2., direction='in')
 
     # CENTER FIGURE: SPECTROGRAM DATA ##########################################################
